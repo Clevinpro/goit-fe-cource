@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>
+        Roboto Light
+    </h1>
+    <h2>
+        Roboto Regular
+    </h2>
+    <h3>
+        Roboto Bold
+    </h3>
+    <h4>
+        Roboto Light Italic
+    </h4>
+    <h5>
+        Roboto Medium
+    </h5>
+    <main>
+        <table>
+            <caption>Our team</caption>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>position</th>
+                    <th>experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alex</td>
+                    <td>30</td>
+                    <td>Middle frontend</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>25</td>
+                    <td>Middle frontend</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>Bart</td>
+                    <td>40</td>
+                    <td>Junior frontend</td>
+                    <td>3 month</td>
+                </tr>
+                <tr>
+                    <td>Robert</td>
+                    <td>60</td>
+                    <td>Senior Fullstack dev</td>
+                    <td>20 years</td>
+                </tr>
+                <tr>
+                    <td>Amanda</td>
+                    <td>40</td>
+                    <td>Senior backend</td>
+                    <td>15 years</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>name</td>
+                    <td>age</td>
+                    <td>position</td>
+                    <td>experience</td>
+                </tr>
+            </tfoot>
+        </table>
+        <form class="form" action="">
+            <label for="username">
+                Name:
+            </label>
+            <input id="username" type="text" name="username" placeholder="Enter name" >
+            <label for="email">
+                Email:
+            </label>
+            <input id="email" type="email" name="email" placeholder="Enter email"  required>
+            <label for="tel">
+                    Phone:
+            </label>
+            <input id="tel" type="tel" name="tel" placeholder="Enter phone" required>
+            <p>Gender:</p>
+            <input id="male" type="radio" value="male" name="gender">
+            <label for="male">
+                male
+            </label>
+            <input id="female" type="radio" value="female" name="gender">
+            <label for="female" >
+                female
+            </label>
+            <input id="frontend" type="checkbox" value="frontend" name="frontend">
+            <label for="frontend">
+                frontend
+            </label>
+            <input id="backend" type="checkbox" value="backend" name="backend">
+            <label for="backend" >
+                backend
+            </label>
+            <select name="stack">
+                <option value="react">react</option>
+                <option value="angular">angular</option>
+                <option value="vue">vue</option>
+            </select>
+            
+            <label for="feedback" >
+                <p>Feedback:</p>
+            </label>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter feedback"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

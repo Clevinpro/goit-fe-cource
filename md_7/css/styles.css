@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table caption {
+    background: thistle;
+}
+
+thead, tfoot {
+    background: thistle;
+    text-align-last: left;
+}
+
+tfoot td {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 5px 10px;
+    min-width: 80px;
+}
+
+tbody td {
+    border: 1px solid gainsboro;
+}
+
+tbody {
+    background: ghostwhite;
+}
+
+
+.form {
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form p {
+    width: 100%;
+}
+
+input {
+    width: 220px;
+    border: 5px solid transparent;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: green;
+}
+
+textarea {
+    font-size: 20px;
+    padding: 5px 20px;
+    color: green;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    width: 190px;
+}
+
+
+input:focus:valid {
+    border: 5px solid green;
+}
+
+input:focus:invalid {
+    border: 5px solid red;
+}
+
+::placeholder {
+    color: red;
+}

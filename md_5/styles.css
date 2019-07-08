@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+:root {
+    --black-filter: rgba(0, 0, 0, .8);
+}
+
+
+/* 
+    Header 
+*/
+
+.header {
+    background-color: rgba(138, 43, 226, 0.6313725490196078);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 111;
+    width: 100%;
+}
+
+.nav__item {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.nav__link {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    min-width: 130px;
+    text-align: center;
+}
+
+.navigation > ul > .nav__item:hover  {
+    color: blue;
+    background-color: aqua;
+}
+
+.sub__items {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    display: none;
+}
+
+.sub__items__second {
+    background: orange;
+    top: 0;
+    bottom: initial;
+    left: 0;
+    transform: translateX(100%);
+}
+
+.sub__items .nav__link {
+    color: purple;
+}
+
+.sub__items .nav__link:hover {
+    color: yellow;
+    font-size: 22px;
+}
+
+.nav__item:hover > .sub__items {
+    display: block;
+}
+
+/* 
+    First Section
+*/
+
+.first__section .first__section__bg {
+    height: 800px;    
+}
+
+.first__section {
+    position: relative;
+}
+
+.first__title {
+    /* position: absolute; */
+    font-size: 42px;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 90px;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.first__section__content {
+    max-width: 500px;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* left: 50%;
+    transform: translateX(-50%) */
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* 
+    Modal 
+
+*/
+
+.modal__overlay {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--black-filter);
+
+}
+
+.modal__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    color: #fff;
+    background: orangered;
+}
+
+/* 
+    Sticky boxes
+*/
+
+
+
+.sticky__boxes {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: scroll;
+    font-size: 0;
+}
+
+.main {
+    border: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.aside {
+    width: 30%;
+    top: 50px;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.box {
+    display: inline-block;
+    width: 70%;
+    height: 500px;
+    background: var(--black-filter);
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video__wrapper {
+    position: relative;
+}
+
+.video__wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black-filter);
+    z-index: 1;
+}
+
+
+.video__content {
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    max-width: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* 
+    Parallax
+*/
+
+.parallax {
+    position: relative;
+    /* The image used */
+    background-image: url(./img/1lw8ul3iq3211.jpg);
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax__content {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
