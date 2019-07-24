@@ -1,0 +1,21 @@
+.section {
+  background: url('../img/1.jpg') no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+
+@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+  .section {
+    background-image: url('../img/1@2x.jpg');
+  }
+}
+
+@media 
+  (-webkit-min-device-pixel-ratio: 3), 
+  (min-resolution: 288dpi) { 
+  .section {
+    background-image: url('../img/1@3x.jpg');
+  }
+}
