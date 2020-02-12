@@ -1,0 +1,9 @@
+
+@mixin text-decor ($size:$default-font-size, $color:$default-text-color, $align:center, $height:normal, $transform: none) {
+  font-size: $size;
+  color: $color;
+  text-align: $align;
+  line-height: $height;
+  text-transform: $transform;
+  text-decoration: underline;
+}
